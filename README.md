@@ -22,14 +22,14 @@ A fast, terminal-based ASCII art generator written in Go that converts images in
 
 ```bash
 # Clone the repository
-git clone INSERT_REPO_URL
+git clone git@github.com:kozmaoliver/asciify.git
 cd asciify
 
 # Build the tool
-go build -o asciify ./cmd/ascii
+go build -o asciify
 
 # Or install globally
-go install ./cmd/asciify
+go install
 ```
 
 ### Usage
