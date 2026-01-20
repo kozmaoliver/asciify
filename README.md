@@ -15,8 +15,7 @@ A fast, terminal-based ASCII art generator written in Go that converts images in
 
 ### Prerequisites
 
-- Go 1.19 or later
-- A terminal emulator (works best on Linux/macOS)
+- Go >= 1.19
 
 ### Installation
 
