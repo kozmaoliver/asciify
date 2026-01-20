@@ -26,7 +26,7 @@ git clone git@github.com:kozmaoliver/asciify.git
 cd asciify
 
 # Build the tool
-go build -o asciify
+go build
 
 # Or install globally
 go install
@@ -59,3 +59,15 @@ Image → Load → Terminal Sizing → Resize → Luminance → Edge Detection �
 7. **Terminal Rendering**: Outputs the final ASCII art to your terminal
 
 > **Tip**: For best results, use images with good contrast and clear subjects. The edge detection works particularly well with architectural photos and portraits!
+
+## Showcase
+
+A generated ASCII image form my profile picture
+
+![image](./docs/resources/demo-1.png)
+
+Same with colors
+
+![image](./docs/resources/demo-1-color.png)
+
+![image](./docs/resources/demo-go-color.png)
