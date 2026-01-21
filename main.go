@@ -16,7 +16,7 @@ import (
 func main() {
 	debugFlag := flag.Bool("debug", false, "Enable debug mode (saves intermediate images and logs)")
 	debugDir := flag.String("debug-dir", "debug_output", "Directory for debug output files")
-	edgeCutoff := flag.Float64("edge-cutoff", 95.0, "Edge detection threshold")
+	edgeCutoff := flag.Float64("edge-cutoff", 90.0, "Edge detection threshold")
 	bgColorStr := flag.String("bg", "none", "Background color: none, black, or white")
 	colorFlag := flag.Bool("color", false, "Enable colored output using original image colors")
 	flag.Parse()
@@ -70,6 +70,7 @@ func main() {
 	debug.Log("Step 1: Generating ASCII from luminance")
 	defaultTheme := theme.NewDefaultTheme()
 	chars := defaultTheme.Characters()
+	brightestChar := defaultTheme.BrightestChar()
 	debug.Log("Theme characters: %d levels", len(chars))
 	
 	for y := 0; y < frameHeight; y++ {
@@ -78,6 +79,8 @@ func main() {
 			
 			if *colorFlag {
 				f.SetColor(x, y, c)
+				f.Set(x, y, brightestChar) 
+				continue
 			}
 			
 			lum := luminance.Luminance(c)
