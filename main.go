@@ -3,13 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
-	"asciify/internal/debug"
-	"asciify/internal/edge"
-	"asciify/internal/frame"
-	"asciify/internal/imageio"
-	"asciify/internal/luminance"
-	"asciify/internal/terminal"
-	"asciify/internal/theme"
+	"github.com/kozmaoliver/asciify/internal/debug"
+	"github.com/kozmaoliver/asciify/internal/edge"
+	"github.com/kozmaoliver/asciify/internal/frame"
+	"github.com/kozmaoliver/asciify/internal/imageio"
+	"github.com/kozmaoliver/asciify/internal/luminance"
+	"github.com/kozmaoliver/asciify/internal/terminal"
+	"github.com/kozmaoliver/asciify/internal/theme"
 	"os"
 )
 

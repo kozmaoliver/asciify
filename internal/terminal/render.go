@@ -2,7 +2,7 @@ package terminal
 
 import (
 	"fmt"
-	"asciify/internal/frame"
+	"github.com/kozmaoliver/asciify/internal/frame"
 	"image/color"
 	"os"
 )

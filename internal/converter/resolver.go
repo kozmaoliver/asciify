@@ -1,8 +1,8 @@
 package converter
 
 import (
-	"asciify/internal/edge"
-	"asciify/internal/theme"
+	"github.com/kozmaoliver/asciify/internal/edge"
+	"github.com/kozmaoliver/asciify/internal/theme"
 )
 
 // Resolver decides which character to use for each pixel
