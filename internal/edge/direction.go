@@ -42,7 +42,7 @@ func EdgeChar(direction float64) rune {
 		return '/'
 	} else {
 		// Diagonal edges (135° and 315°)
-		if edge, ok := edgeChars["vdiagonal2"]; ok {
+		if edge, ok := edgeChars["diagonal2"]; ok {
 			return edge
 		}
 		return '\\'
