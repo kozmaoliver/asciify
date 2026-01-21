@@ -15,31 +15,37 @@ A fast, terminal-based ASCII art generator written in Go that converts images in
 
 ### Prerequisites
 
-- Go >= 1.19
+- Go >= 1.24
 
 ### Installation
 
+### Go
+
 ```bash
-# Clone the repository
+go install github.com/kozmaoliver/asciify@latest
+```
+
+### Manual
+
+```bash
 git clone git@github.com:kozmaoliver/asciify.git
 cd asciify
-
-# Build the tool
-go build
-
-# Or install globally
 go install
 ```
 
+If you don't want to install it globally, you can just build an executable:
+```bash
+go build
+```
+
 ### Usage
+Call `asciify` or the executable `./path/to/asciify/asciify` with an image path argument in the terminal.
 ```bash
 # Basic usage
-./asciify path/to/your/image.png
+asciify path/to/your/image.png
 
-# Examples
-./asciify photo.jpg
-./asciify ~/Pictures/landscape.png
-./asciify ./images/portrait.gif
+# With colors
+asciify -color colorful_image.jpg
 ```
 
 ## How It Works
