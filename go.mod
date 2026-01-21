@@ -1,4 +1,4 @@
-module asciify
+module github.com/kozmaoliver/asciify
 
 go 1.24.0
 
